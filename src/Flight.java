@@ -1,78 +1,91 @@
 public class Flight {
-   private  String FlightId;
- private String Origin;
- private String Destination;
- public String Date;
- public String Time;
- public String Price;
- public String Seats;
+    private String FlightId;
+    private String Origin;
+    private String Destination;
+    public String Date;
+    public String Time;
+    public int Price;
+    public int Seats;
 
- public String getFlightId() {
-  return FlightId;
- }
+    public Flight() {
+    }
 
- public void setFlightId(String flightId) {
-  FlightId = flightId;
- }
+    public Flight(String flightId, String origin, String destination, String date, String time, int price, int seats) {
+        FlightId = flightId;
+        Origin = origin;
+        Destination = destination;
+        Date = date;
+        Time = time;
+        Price = price;
+        Seats = seats;
+    }
 
- public String getOrigin() {
-  return Origin;
- }
+    public String getFlightId() {
+        return FlightId;
+    }
 
- public void setOrigin(String origin) {
-  Origin = origin;
- }
+    public void setFlightId(String flightId) {
+        FlightId = flightId;
+    }
 
- public String getDestination() {
-  return Destination;
- }
+    public String getOrigin() {
+        return Origin;
+    }
 
- public void setDestination(String destination) {
-  Destination = destination;
- }
+    public void setOrigin(String origin) {
+        Origin = origin;
+    }
 
- public String getDate() {
-  return Date;
- }
+    public String getDestination() {
+        return Destination;
+    }
 
- public void setDate(String date) {
-  Date = date;
- }
+    public void setDestination(String destination) {
+        Destination = destination;
+    }
 
- public String getTime() {
-  return Time;
- }
+    public String getDate() {
+        return Date;
+    }
 
- public void setTime(String time) {
-  Time = time;
- }
+    public void setDate(String date) {
+        Date = date;
+    }
 
- public String getPrice() {
-  return Price;
- }
+    public String getTime() {
+        return Time;
+    }
 
- public void setPrice(String price) {
-  Price = price;
- }
+    public void setTime(String time) {
+        Time = time;
+    }
 
- public String getSeats() {
-  return Seats;
- }
+    public int getPrice() {
+        return Price;
+    }
 
- public void setSeats(String seats) {
-  Seats = seats;
- }
+    public void setPrice(int price) {
+        Price = price;
+    }
 
- @Override
- public String toString() {
-  return "Flight{" +
-          "FlightId='" + FlightId + '\'' +
-          ", Origin='" + Origin + '\'' +
-          ", Destination='" + Destination + '\'' +
-          ", Date='" + Date + '\'' +
-          ", Time='" + Time + '\'' +
-          ", Price='" + Price + '\'' +
-          ", Seats='" + Seats + '\'' +
-          '}';
- }
+    public int getSeats() {
+        return Seats;
+    }
+
+    public void setSeats(int seats) {
+        Seats = seats;
+    }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "FlightId='" + FlightId + '\'' +
+                ", Origin='" + Origin + '\'' +
+                ", Destination='" + Destination + '\'' +
+                ", Date='" + Date + '\'' +
+                ", Time='" + Time + '\'' +
+                ", Price='" + Price + '\'' +
+                ", Seats='" + Seats + '\'' +
+                '}';
+    }
 }

@@ -6,6 +6,8 @@ public class User {
 
     private String password;
 
+    public int charge;
+
     public String getName() {
         return name;
     }
@@ -43,6 +45,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getCharge() {
+        return charge;
+    }
+
+    public void setCharge(int newCharge) {
+        this.charge = newCharge;
     }
 
     @Override
